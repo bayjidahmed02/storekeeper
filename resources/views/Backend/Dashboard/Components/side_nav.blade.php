@@ -30,7 +30,7 @@
             <div id="two-column-menu"></div>
             <ul class="navbar-nav" id="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="">
+                    <a class="nav-link menu-link" href="{{ route('admin.index') }}">
                         <i data-feather="home" class="icon-dual"></i>
                         <span data-key="t-dashboards">Dashboard</span>
                     </a>
@@ -43,13 +43,37 @@
                     <a class="nav-link menu-link" href="#ImageLayout" data-bs-toggle="collapse" role="button"
                         aria-expanded="false" aria-controls="ImageLayout">
                         <i data-feather="image" class="icon-dual"></i>
-                        <span data-key="t-dashboards">Menu</span>
+                        <span data-key="t-dashboards">Products</span>
                     </a>
                     <div class="collapse menu-dropdown" id="ImageLayout">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="" class="nav-link" data-key="t-analytics">
-                                    Dropdown Menu
+                                <a href="{{ route('admin.products.index') }}" class="nav-link" data-key="t-analytics">
+                                    Products
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('admin.products.create') }}" class="nav-link" data-key="t-analytics">
+                                    Add Product
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav" id="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#TransactionLayout" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="TransactionLayout">
+                        <i data-feather="image" class="icon-dual"></i>
+                        <span data-key="t-dashboards">Transaction</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="TransactionLayout">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="{{ route('admin.transaction.create') }}" class="nav-link"
+                                    data-key="t-analytics">
+                                    Sale Generate
                                 </a>
                             </li>
                         </ul>

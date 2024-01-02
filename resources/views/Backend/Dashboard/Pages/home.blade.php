@@ -4,11 +4,13 @@
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                <h4 class="mb-sm-0">Tasks List</h4>
+                <h4 class="mb-sm-0">Sales Report</h4>
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item"><a href="javascript: void(0);">Tasks</a></li>
-                        <li class="breadcrumb-item active">Tasks List</li>
+                        <li class="breadcrumb-item">
+                            <a href="javascript: void(0);">Sales</a>
+                        </li>
+                        <li class="breadcrumb-item active">Sales Report</li>
                     </ol>
                 </div>
 
@@ -23,13 +25,17 @@
                 <div class="card-body">
                     <div class="d-flex justify-content-between">
                         <div>
-                            <p class="fw-medium text-muted mb-0">Hello</p>
+                            <h5 class="fw-medium text-muted mb-0">Today</h5>
                             <h2 class="mt-4 ff-secondary fw-semibold">
-                                <span class="counter-value" data-target="05"></span>k
+                                {{-- <span class="counter-value" data-target="05"></span>k --}}
+                                <span class="counter-value" data-target=" {{ $today }}"></span>Tk
+
                             </h2>
-                            <p class="mb-0 text-muted"><span class="badge bg-light text-success mb-0">
+                            {{-- <p class="mb-0 text-muted">
+                                <span class="badge bg-light text-success mb-0">
                                     <i class="ri-arrow-up-line align-middle"></i> 17.32 %
-                                </span> vs. previous month</p>
+                                </span> vs. previous month
+                            </p> --}}
                         </div>
                         <div>
                             <div class="avatar-sm flex-shrink-0">
@@ -47,13 +53,14 @@
                 <div class="card-body">
                     <div class="d-flex justify-content-between">
                         <div>
-                            <p class="fw-medium text-muted mb-0">Hello</p>
+                            <p class="fw-medium text-muted mb-0">Yesterday</p>
                             <h2 class="mt-4 ff-secondary fw-semibold">
-                                <span class="counter-value" data-target="05"></span>k
+                                <span class="counter-value" data-target="{{ $yesterday }}"></span>Tk
                             </h2>
-                            <p class="mb-0 text-muted"><span class="badge bg-light text-success mb-0">
+                            {{-- <p class="mb-0 text-muted">
+                                <span class="badge bg-light text-success mb-0">
                                     <i class="ri-arrow-up-line align-middle"></i> 17.32 %
-                                </span> vs. previous month</p>
+                                </span> vs. previous month</p> --}}
                         </div>
                         <div>
                             <div class="avatar-sm flex-shrink-0">
@@ -71,13 +78,14 @@
                 <div class="card-body">
                     <div class="d-flex justify-content-between">
                         <div>
-                            <p class="fw-medium text-muted mb-0">Hello</p>
+                            <p class="fw-medium text-muted mb-0">This Month</p>
                             <h2 class="mt-4 ff-secondary fw-semibold">
-                                <span class="counter-value" data-target="05"></span>k
+                                <span class="counter-value" data-target="{{ $this_month }}"></span>Tk
                             </h2>
-                            <p class="mb-0 text-muted"><span class="badge bg-light text-success mb-0">
+                            {{-- <p class="mb-0 text-muted">
+                                <span class="badge bg-light text-success mb-0">
                                     <i class="ri-arrow-up-line align-middle"></i> 17.32 %
-                                </span> vs. previous month</p>
+                                </span> vs. previous month</p> --}}
                         </div>
                         <div>
                             <div class="avatar-sm flex-shrink-0">
@@ -95,13 +103,14 @@
                 <div class="card-body">
                     <div class="d-flex justify-content-between">
                         <div>
-                            <p class="fw-medium text-muted mb-0">Hello</p>
+                            <p class="fw-medium text-muted mb-0">Last Month</p>
                             <h2 class="mt-4 ff-secondary fw-semibold">
-                                <span class="counter-value" data-target="05"></span>k
+                                <span class="counter-value" data-target="{{ $last_moth }}"></span>Tk
                             </h2>
-                            <p class="mb-0 text-muted"><span class="badge bg-light text-success mb-0">
+                            {{-- <p class="mb-0 text-muted">
+                                <span class="badge bg-light text-success mb-0">
                                     <i class="ri-arrow-up-line align-middle"></i> 17.32 %
-                                </span> vs. previous month</p>
+                                </span> vs. previous month</p> --}}
                         </div>
                         <div>
                             <div class="avatar-sm flex-shrink-0">
